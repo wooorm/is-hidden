@@ -1,0 +1,6 @@
+build/
+components/
+coverage/
+build.js
+is-hidden.js
+is-hidden.min.js
