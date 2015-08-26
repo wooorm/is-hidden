@@ -1,6 +1,6 @@
 # is-hidden [![Build Status](https://img.shields.io/travis/wooorm/is-hidden.svg?style=flat)](https://travis-ci.org/wooorm/is-hidden) [![Coverage Status](https://img.shields.io/coveralls/wooorm/is-hidden.svg?style=flat)](https://coveralls.io/r/wooorm/is-hidden?branch=master)
 
-Check whether `filePath` is hidden (starts with a dot).
+Check whether `filename` is hidden (starts with a dot).
 
 ## Installation
 
@@ -26,21 +26,21 @@ isHidden('readme.md'); // false
 
 ## API
 
-### isHidden(filePath)
+### isHidden(filename)
 
-Check whether `filePath` is hidden (starts with a dot).
+Check whether `filename` is hidden (starts with a dot).
 
 **Parameters**
 
-*   `filePath` (`string`) — File-path to check.
+*   `filename` (`string`) — File-path to check.
 
 **Returns**
 
-`boolean` — Whether `filePath` is hidden.
+`boolean` — Whether `filename` is hidden.
 
 **Throws**
 
-*   `Error` — When `filePath` is not a string.
+*   `Error` — When `filename` is not a string.
 
 ## License
 

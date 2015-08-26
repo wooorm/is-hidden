@@ -28,7 +28,7 @@ var throws = assert.throws;
  * Tests.
  */
 
-describe('isHidden(filePath)', function () {
+describe('isHidden(filename)', function () {
     it('should work', function () {
         equal(isHidden('.git'), true);
         equal(isHidden('git'), false);

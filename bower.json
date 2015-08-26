@@ -1,7 +1,7 @@
 {
   "name": "is-hidden",
   "main": "is-hidden.js",
-  "description": "Check if `filePath` is hidden (starts with a dot)",
+  "description": "Check if `filename` is hidden (starts with a dot)",
   "license": "MIT",
   "keywords": [
     "file",
