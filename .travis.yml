@@ -6,4 +6,3 @@ node_js:
 - '0.12'
 - iojs
 sudo: false
-after_script: npm install coveralls@2.10.0 && cat ./coverage/lcov.info | coveralls

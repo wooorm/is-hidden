@@ -1,4 +1,4 @@
-# is-hidden [![Build Status](https://img.shields.io/travis/wooorm/is-hidden.svg?style=flat)](https://travis-ci.org/wooorm/is-hidden) [![Coverage Status](https://img.shields.io/coveralls/wooorm/is-hidden.svg?style=flat)](https://coveralls.io/r/wooorm/is-hidden?branch=master)
+# is-hidden [![Build Status](https://img.shields.io/travis/wooorm/is-hidden.svg)](https://travis-ci.org/wooorm/is-hidden) [![Coverage Status](https://img.shields.io/codecov/c/github/wooorm/is-hidden.svg)](https://codecov.io/github/wooorm/is-hidden)
 
 Check whether `filename` is hidden (starts with a dot).
 
