@@ -1,45 +1,23 @@
-/**
- * @author Titus Wormer
- * @copyright 2014-2015 Titus Wormer
- * @license MIT
- * @module is-hidden
- * @fileoverview Test suite for `is-hidden`.
- */
-
 'use strict';
 
-/* eslint-env node, mocha */
-
-/*
- * Dependencies.
- */
-
-var isHidden = require('./');
+var hidden = require('./');
 var assert = require('assert');
-
-/*
- * Methods.
- */
 
 var equal = assert.strictEqual;
 var throws = assert.throws;
 
-/*
- * Tests.
- */
+describe('hidden(filename)', function () {
+  it('should work', function () {
+    equal(hidden('.git'), true);
+    equal(hidden('git'), false);
 
-describe('isHidden(filename)', function () {
-    it('should work', function () {
-        equal(isHidden('.git'), true);
-        equal(isHidden('git'), false);
+    equal(hidden('.DS_Store'), true);
+    equal(hidden('DS.Store'), false);
+  });
 
-        equal(isHidden('.DS_Store'), true);
-        equal(isHidden('DS.Store'), false);
-    });
-
-    it('should throw when not given a string', function () {
-        throws(function () {
-            isHidden(true);
-        }, /expected string/i);
-    });
+  it('should throw when not given a string', function () {
+    throws(function () {
+      hidden(true);
+    }, /expected string/i);
+  });
 });

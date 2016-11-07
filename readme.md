@@ -18,10 +18,10 @@ and for AMD, CommonJS, and globals ([uncompressed](is-hidden.js) and
 ## Usage
 
 ```js
-var isHidden = require('is-hidden');
+var hidden = require('is-hidden');
 
-isHidden('.git'); // true
-isHidden('readme.md'); // false
+hidden('.git'); //=> true
+hidden('readme.md'); //=> false
 ```
 
 ## API
