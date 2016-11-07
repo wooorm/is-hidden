@@ -1,23 +1,21 @@
 'use strict';
 
+var test = require('tape');
 var hidden = require('./');
-var assert = require('assert');
 
-var equal = assert.strictEqual;
-var throws = assert.throws;
+test('hidden(filename)', function (t) {
+  t.equal(hidden('.git'), true, 'should work (1)');
+  t.equal(hidden('git'), false, 'should work (2)');
+  t.equal(hidden('.DS_Store'), true, 'should work (3)');
+  t.equal(hidden('DS.Store'), false, 'should work (4)');
 
-describe('hidden(filename)', function () {
-  it('should work', function () {
-    equal(hidden('.git'), true);
-    equal(hidden('git'), false);
-
-    equal(hidden('.DS_Store'), true);
-    equal(hidden('DS.Store'), false);
-  });
-
-  it('should throw when not given a string', function () {
-    throws(function () {
+  t.throws(
+    function () {
       hidden(true);
-    }, /expected string/i);
-  });
+    },
+    /^Error: Expected string$/,
+    'should throw when not given a string'
+  );
+
+  t.end();
 });

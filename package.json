@@ -22,29 +22,33 @@
   "devDependencies": {
     "browserify": "^11.0.0",
     "esmangle": "^1.0.0",
-    "istanbul": "^0.3.0",
-    "mocha": "^2.0.0",
+    "nyc": "^8.4.0",
     "remark-cli": "^2.1.0",
     "remark-preset-wooorm": "^1.0.0",
+    "tape": "^4.6.2",
     "xo": "^0.17.0"
   },
   "scripts": {
-    "test-api": "mocha --check-leaks test.js",
-    "test-coverage": "istanbul cover _mocha -- --check-leaks test.js",
-    "test-travis": "npm run test-coverage",
-    "test": "npm run test-api",
-    "lint": "xo",
-    "make": "npm run lint && npm run test-coverage",
     "build-md": "remark . --quiet --frail --output",
     "build-bundle": "browserify index.js --bare -s isHidden > is-hidden.js",
-    "postbuild-bundle": "esmangle is-hidden.js > is-hidden.min.js",
-    "build": "npm run build-md && npm run build-bundle"
+    "build-mangle": "esmangle < is-hidden.js > is-hidden.min.js",
+    "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
+    "lint": "xo",
+    "test-api": "node test",
+    "test-coverage": "nyc --reporter lcov tape test.js",
+    "test": "npm run build && npm run lint && npm run test-coverage"
   },
   "xo": {
     "space": true,
     "ignores": [
       "is-hidden.js"
     ]
+  },
+  "nyc": {
+    "check-coverage": true,
+    "lines": 100,
+    "functions": 100,
+    "branches": 100
   },
   "remarkConfig": {
     "presets": "wooorm"
