@@ -11,13 +11,7 @@
     "full",
     "stop"
   ],
-  "files": [
-    "index.js"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/is-hidden.git"
-  },
+  "repository": "https://github.com/wooorm/is-hidden",
   "author": "Titus Wormer <tituswormer@gmail.com>",
   "devDependencies": {
     "browserify": "^13.0.0",
@@ -28,6 +22,9 @@
     "tape": "^4.6.2",
     "xo": "^0.17.0"
   },
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "build-md": "remark . --quiet --frail --output",
     "build-bundle": "browserify index.js --bare -s isHidden > is-hidden.js",
