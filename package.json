@@ -11,8 +11,16 @@
     "full",
     "stop"
   ],
-  "repository": "https://github.com/wooorm/is-hidden",
-  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "repository": "wooorm/is-hidden",
+  "bugs": "https://github.com/wooorm/is-hidden/issues",
+  "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "browserify": "^14.0.0",
     "esmangle": "^1.0.0",
@@ -22,9 +30,6 @@
     "tape": "^4.6.2",
     "xo": "^0.18.0"
   },
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "build-md": "remark . -qfo",
     "build-bundle": "browserify index.js --bare -s isHidden > is-hidden.js",
@@ -52,6 +57,8 @@
     "branches": 100
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
