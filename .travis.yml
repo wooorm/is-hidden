@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '4.0'
-- '7.0'
+- '8.0'
 after_script: bash <(curl -s https://codecov.io/bash)
 deploy:
   - provider: npm
@@ -10,7 +10,7 @@ deploy:
       secure: CltNdiHbOPjkcvqUHm29e0PS88yP+gsVAb99sWlv7gm8PSH7P3V0FZTbHAgvaIKXtDl7LeWiM4VWTZNey7cGz5pCz8jO9rKC5KsTYyzxrrwTjGMVzLzHTMZKezVx0k34OLBpNqj4BugSCJHPKRD/a82iK2U5x4izF6rgtTAhlW7qnUwQ8uWy763DKrc4FCgsQrIVPAEspi01XuGZuboczkmkdHnFElzAJ8XV6VVc669+4Q9KPsmho7T8Z0+8b75g5hdgUi0O2E4z4sBZP8S+nra3+4N3Z8aNPf8wGtrXlKQTrIpbwJbycB+P3kPG1WBo0OdRA3bCz2v+1DD6yUwWk6fPQIN/3ChiTkDZ+yO9BHFmQO1MMaK+SCHqAjHi5t9KBuv81kMR7r6z0OQVMxz/cn6d38XrsH8tNk0Ij0k6ay/vVuJelQKmKpbtPBR2Ag3CwUUajRVNSdc1/GrJO75hg398YxqXSe5Raa/LWog6tfGA1pYMAAJwdAAFLC/9Ah9fCTjNStIlgD2h2SO03FrH3qBkUXIjhckG6ud9DREV2PMIX25bmIrQix4m2Ijd2yV3t6EcxWu6lBjzgrZyDxdPFgxpzGmfloB4Pb8NyZC/vtkuWuLQyqA/Gu6cyYh2d9cUet/IPP7Pb7y4yE7ZvqgH+U+Im3vF8ctIPdUXysIBwwk=
     on:
       tags: true
-      node: '4.0'
+      node: '8.0'
   - provider: releases
     api_key:
       secure: LeeGf3FG8VBq6JlT/cpePlufDrwqTLPIJcQnHVX13xgewmEvoKjbj37QdavtoGdbcoJ9/T7GGyuQI2nQaNHYubvlBRJyWkgj2N7vzgvOr1fJnWof49GJPeNJSTKCiVWJ+butDGDvSPXqwEzwLJJGbnYGZqmDUmUcMKpVD3Id+ajRf5jki057Bqarosfq73bdvuTc9es97PVAKvf99HqXPGKJ3n4XtKjqo0qJyBKuDH0RHsoOMin09B8ZACKFyr6B4n4IbXms5ESKIbstePs7dEB01c6pfpo0FtieruEfevHRhTCK/aeEbCN2xMbQs+WQjVcAqNRudvpaE2eT5lYukNAgxQdbPpT5mZuZquRtaZbVZAIC1+Zz3177abfIF5uKUyCMi3lt9+PrV1svEUaNXuhT0OtLP4yJR/sD94KVJk3Sksu/KFbUdK+MXhnoOCKnoQyai6qrBW9kIZ/pXUxBfuNbgHrdGgGSy4kijPhfHM3hPLxUg7bCtC+c3RaeZRob7y7kgOEzo4kZ5LPRfQSEsAnhWTBLn/qoma+aiWAjjf6dGH/jHNtXES6HZI5ZqBD2cm1oLVU9jNn7OevhjhBfLz86X01113OaWLjRNFt+znC0qAH7wY3AAnBWte7AZJJuAOWIPEA2z1Y0gvobcSHz8yn1253iSc7Bry/FZCXi3aU=
@@ -19,4 +19,4 @@ deploy:
       - "is-hidden.min.js"
     on:
       tags: true
-      node: '7.0'
+      node: '8.0'
