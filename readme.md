@@ -13,10 +13,10 @@ npm install is-hidden
 ## Usage
 
 ```javascript
-var hidden = require('is-hidden');
+var hidden = require('is-hidden')
 
-hidden('.git'); //=> true
-hidden('readme.md'); //=> false
+hidden('.git') // => true
+hidden('readme.md') // => false
 ```
 
 ## API
