@@ -1,7 +1,7 @@
 'use strict';
 
 var test = require('tape');
-var hidden = require('./');
+var hidden = require('.');
 
 test('hidden(filename)', function (t) {
   t.equal(hidden('.git'), true, 'should work (1)');
