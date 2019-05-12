@@ -1,4 +1,9 @@
-# is-hidden [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# is-hidden
+
+[![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Check if `filename` is hidden (starts with a dot).
 
@@ -31,13 +36,21 @@ Check if `filename` is hidden (starts with a dot).
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/is-hidden.svg
+[build-badge]: https://img.shields.io/travis/wooorm/is-hidden.svg
 
-[travis]: https://travis-ci.org/wooorm/is-hidden
+[build]: https://travis-ci.org/wooorm/is-hidden
 
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/is-hidden.svg
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-hidden.svg
 
-[codecov]: https://codecov.io/github/wooorm/is-hidden
+[coverage]: https://codecov.io/github/wooorm/is-hidden
+
+[downloads-badge]: https://img.shields.io/npm/dm/is-hidden.svg
+
+[downloads]: https://www.npmjs.com/package/is-hidden
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/is-hidden.svg
+
+[size]: https://bundlephobia.com/result?p=is-hidden
 
 [npm]: https://docs.npmjs.com/cli/install
 
