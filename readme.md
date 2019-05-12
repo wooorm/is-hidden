@@ -43,4 +43,4 @@ Check if `filename` is hidden (starts with a dot).
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
