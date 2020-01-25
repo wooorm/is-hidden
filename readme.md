@@ -7,17 +7,17 @@
 
 Check if `filename` is hidden (starts with a dot).
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install is-hidden
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var hidden = require('is-hidden')
 
 hidden('.git') // => true
