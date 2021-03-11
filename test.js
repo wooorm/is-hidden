@@ -9,6 +9,7 @@ test('isHidden(filename)', function (t) {
 
   t.throws(
     function () {
+      // @ts-ignore runtime
       isHidden(true)
     },
     /^TypeError: Expected string$/,

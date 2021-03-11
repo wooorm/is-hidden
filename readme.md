@@ -5,7 +5,7 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-Check if `filename` is hidden (starts with a dot).
+Check if `basename` is hidden (starts with a dot).
 
 ## Install
 
@@ -32,9 +32,9 @@ isHidden('readme.md') // => false
 This package exports the following identifiers: `trimTrailingLines`.
 There is no default export.
 
-### `isHidden(filename)`
+### `isHidden(basename)`
 
-Check if `filename` is hidden (starts with a dot).
+Check if `basename` is hidden (starts with a dot).
 
 ## License
 
