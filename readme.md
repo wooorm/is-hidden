@@ -36,9 +36,9 @@ Check if `filename` is hidden (starts with a dot).
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/is-hidden.svg
+[build-badge]: https://github.com/wooorm/is-hidden/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/is-hidden
+[build]: https://github.com/wooorm/is-hidden/actions
 
 [coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/is-hidden.svg
 
