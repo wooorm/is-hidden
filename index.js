@@ -1,10 +1,6 @@
-'use strict'
-
-module.exports = hidden
-
-function hidden(filename) {
+export function isHidden(filename) {
   if (typeof filename !== 'string') {
-    throw new Error('Expected string')
+    throw new TypeError('Expected string')
   }
 
   return filename.charAt(0) === '.'

@@ -9,6 +9,9 @@ Check if `filename` is hidden (starts with a dot).
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -18,15 +21,18 @@ npm install is-hidden
 ## Use
 
 ```js
-var hidden = require('is-hidden')
+import {isHidden} from 'is-hidden'
 
-hidden('.git') // => true
-hidden('readme.md') // => false
+isHidden('.git') // => true
+isHidden('readme.md') // => false
 ```
 
 ## API
 
-### `hidden(filename)`
+This package exports the following identifiers: `trimTrailingLines`.
+There is no default export.
+
+### `isHidden(filename)`
 
 Check if `filename` is hidden (starts with a dot).
 

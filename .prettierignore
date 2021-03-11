@@ -1,5 +1,2 @@
 coverage/
-is-hidden.js
-is-hidden.min.js
-*.json
 *.md
