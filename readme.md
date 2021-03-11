@@ -29,7 +29,7 @@ isHidden('readme.md') // => false
 
 ## API
 
-This package exports the following identifiers: `trimTrailingLines`.
+This package exports the following identifiers: `isHidden`.
 There is no default export.
 
 ### `isHidden(basename)`

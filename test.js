@@ -1,7 +1,7 @@
 import test from 'tape'
 import {isHidden} from './index.js'
 
-test('isHidden(filename)', function (t) {
+test('isHidden(basename)', function (t) {
   t.equal(isHidden('.git'), true, 'should work (1)')
   t.equal(isHidden('git'), false, 'should work (2)')
   t.equal(isHidden('.DS_Store'), true, 'should work (3)')
